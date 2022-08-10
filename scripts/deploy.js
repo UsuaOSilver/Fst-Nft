@@ -11,12 +11,12 @@ async function main() {
 
         console.log("Account balance:", (await deployer.getBalance()).toString());
         
-        const Contract = await hre.ethers.getContractFactory("FirstNFTDrop");
+        const Contract = await hre.ethers.getContractFactory("FstNFT");
         const contract = await Contract.deploy(BASE_URI, TOKEN_NAME, TOKEN_SYMBOL);
         
         await contract.deployed();
         
-        console.log('contract deployed at ${contract.address}');     
+        console.log(`contract deployed at ${contract.address}`);     
     } catch (error) {
         console.log(error);
     }
