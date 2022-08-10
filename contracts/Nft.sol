@@ -48,9 +48,9 @@ contract FstNFT is ERC721Enumerable, Ownable {
         
         require(numberOfTokens <= maxNftPurchase, "You can only mint up to 5 NFTs in a single transaction");
         require(nftMinted + numberOfTokens <= TOTAL_SUPPLY, 
-                "Sold out! Only " + Strings.toString(remainingSupply) + " NFT(s) left."
+                string.concat("Sold out! Only ", Strings.toString(remainingSupply), " NFT(s) left.")
                 );
-        require(msg.value >= totalPrice, "You must send at least " + Strings.toString(totalPrice) + " ether");
+        require(msg.value >= totalPrice, string.concat("You must send at least ", Strings.toString(totalPrice), " ether"));
         
         uint256 nftId = nftMinted + 1;
         
