@@ -4,7 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "chain": "hardhat node --network hardhat --no-deploy",
+    "fork": "hardhat node --no-deploy --network hardhat --fork https://mainnet.infura.io/v3/460f40a260564ac4a4f4b3fffb032dad",
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat deploy --export-all ../react-app/src/contracts/hardhat_contracts.json",
+    "postdeploy": "hardhat run scripts/publish.js",
+    "watch": "node scripts/watch.js",
+    "accounts": "hardhat accounts",
+    "balance": "hardhat balance",
+    "send": "hardhat send",
+    "generate": "hardhat generate",
+    "account": "hardhat account",
+    "verify": "hardhat etherscan-verify --api-key PSW8C433Q667DVEX5BCRMGNAH9FSGFZ7Q8"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +27,7 @@
     "hardhat": "^2.10.1"
   },
   "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
     "@openzeppelin/contracts": "^4.7.2",
     "@pinata/sdk": "^1.1.26"
   }

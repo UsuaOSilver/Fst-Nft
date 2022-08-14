@@ -17,6 +17,21 @@ async function main() {
         await contract.deployed();
         
         console.log(`contract deployed at ${contract.address}`);     
+        
+        // console.log("Verifying contract");
+        
+        // Tried this on Github issue but didn't work so follow hardhat docs
+        // await hre.run("verify:verify", {
+        //     address: 0x810D5fC2dE3795F47e8e74E9Efe26B2ce593e852,
+        //     constructorArguments: [
+        //         BASE_URI,
+        //         TOKEN_NAME, 
+        //         TOKEN_SYMBOL,
+        //     ],
+        // }); 
+          
+        // console.log("Contract verified");
+  
     } catch (error) {
         console.log(error);
     }

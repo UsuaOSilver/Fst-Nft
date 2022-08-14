@@ -1,3 +1,5 @@
 node_modules
 
 hardhat.config.js
+
+secrets.json
