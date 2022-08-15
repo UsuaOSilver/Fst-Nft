@@ -1,6 +1,6 @@
 # Premier NFT Collection
 
-Tech stack:
+### Tech stack:
 - OppenZeppelin
 - Hardhat
 - Pinata
@@ -8,7 +8,7 @@ Tech stack:
 - IPFS
 - Alchemy
 
-What I learn:
+### What I learn:
 - How BAYC, CryptoPunk, NounsDAO design their smart contracts. These are some of the A+ projects with strong security guarantees, secured metadata, creativity, and elegance according to the [NFT smart contract rating](https://docs.google.com/spreadsheets/d/1vv1FNTSgIlAyeOg7lIYyChy9b9XYHJlS-spA7vYSSgk/edit#gid=0) of the CTO of RTFKT, [Samuel Cardillo](http://twitter.com/CardilloSamuel).
 - The pros and cons of different ERC721 implementations from OppenZeppelin (ERC721 OP), Rari Capital (ERC721 solmate) and the Azuki team (ERC721A).
 - Implement the ERC721 OP standard contract, it's utilities and extensions.
@@ -17,3 +17,5 @@ What I learn:
 - Upload png files to IPFS through Pinata and generate metadata files for each NFT automatically.
 - Build and deploy a Hardhat project from scratch with the help of Hardhat doc.
 - The importance of commenting and documenting (coding best practices).
+
+Etherscan verification: https://rinkeby.etherscan.io/address/0x810D5fC2dE3795F47e8e74E9Efe26B2ce593e852#code
