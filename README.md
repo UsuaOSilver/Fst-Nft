@@ -20,6 +20,11 @@
 
 Etherscan verification: https://rinkeby.etherscan.io/address/0x810D5fC2dE3795F47e8e74E9Efe26B2ce593e852#code
 
+## Solidity tests with Foundry
+Updated Aug 15, 2022.
+
+repo: https://github.com/UsuaOSilver/fst-nft-Foundry/blob/master/test/FstNFT.t.sol
+
 
 ## Fuzz test with Echidna
 Updated Aug 23rd, 2022.
