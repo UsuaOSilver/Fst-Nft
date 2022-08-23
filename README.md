@@ -21,7 +21,7 @@
 Etherscan verification: https://rinkeby.etherscan.io/address/0x810D5fC2dE3795F47e8e74E9Efe26B2ce593e852#code
 
 
-### Fuzz test with Echidna
+## Fuzz test with Echidna
 Updated Aug 23rd, 2022.
 
 - Learn Docker to install echidna, use trailofbits/eth-security-toolbox in, and mount local folder to Docker container.
