@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.16;
+pragma solidity 0.8.10;
 
 import "../node_modules/@openzeppelin/contracts/utils/Counters.sol";
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/utils/Strings.sol";
+import "../node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
+import "../node_modules/@openzeppelin/contracts/access/Ownable.sol";
+import "../node_modules/@openzeppelin/contracts/utils/Strings.sol";
 
 /** 1. Compatible with ERC-721 standard */
 contract FstNFT is ERC721Enumerable, Ownable {
@@ -24,22 +24,21 @@ contract FstNFT is ERC721Enumerable, Ownable {
     /** 5. No user can mint more than 5 NFTs in a single transaction */
     uint256 public constant maxNftPurchase = 5;
     
-    string public URI;
+    string public URI = "ipfs://QmeWPFbJoxYs6UTwZchf76f8MFSgtdEZRpRrY2txGCN6SA";
     
-    constructor(string memory name, string memory symbol, string memory baseURI) ERC721(name, symbol) {
-        URI = baseURI;
-    }
+    constructor() ERC721("First", "FST") {}
     
     function mintNft(uint numberOfTokens) public payable {
         uint256 nftMinted = totalSupply();
         uint256 remainingSupply = TOTAL_SUPPLY - nftMinted;
         uint256 totalPrice = numberOfTokens * PRICE;
+        // bytes32 remainingSupplyMsg = bytes32(abi.encodePacked(remainingSupply));
+        // string memory minPriceRequired =  string.concat("Need at least", abi.encodePacked(totalPrice), " ether");
+        
         
         require(numberOfTokens <= maxNftPurchase, "You can only mint up to 5 NFTs in a single transaction");
-        require(nftMinted + numberOfTokens <= TOTAL_SUPPLY, 
-                string.concat("Sold out! Only ", Strings.toString(remainingSupply), " NFT(s) left.")
-                );
-        require(msg.value >= totalPrice, string.concat("You must send at least ", Strings.toString(totalPrice), " ether"));
+        require(nftMinted + numberOfTokens <= TOTAL_SUPPLY, "Sold out! Can't mint more than max supply");
+        require(msg.value >= totalPrice, "Need at least 0.01*numberOfTokens ether");
         
         uint256 nftId = nftMinted + 1;
         

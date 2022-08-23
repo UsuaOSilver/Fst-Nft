@@ -12,7 +12,7 @@ async function main() {
         console.log("Account balance:", (await deployer.getBalance()).toString());
         
         const Contract = await hre.ethers.getContractFactory("FstNFT");
-        const contract = await Contract.deploy(BASE_URI, TOKEN_NAME, TOKEN_SYMBOL);
+        const contract = await Contract.deploy();
         
         await contract.deployed();
         

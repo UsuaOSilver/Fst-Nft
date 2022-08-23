@@ -4,7 +4,7 @@ require("@nomiclabs/hardhat-etherscan");
 let secrets = require("./secrets.json");
 
 module.exports = {
-  solidity: "0.8.16",
+  solidity: "0.8.10",
   networks: {
     rinkeby: {
     url: secrets.url,
