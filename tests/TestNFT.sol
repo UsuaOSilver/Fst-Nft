@@ -9,5 +9,7 @@ contract TestNFT is NFT {
         FstNFT nft = new FstNFT("FstNFT", "FST", "baseURI");
     }
     
-    function echidna_
+    function echidna_max_supply_under_100() public view returns (bool) {
+        return (totalSupply() <= 100);
+    }
 }
