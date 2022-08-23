@@ -19,3 +19,9 @@
 - The importance of commenting and documenting (coding best practices).
 
 Etherscan verification: https://rinkeby.etherscan.io/address/0x810D5fC2dE3795F47e8e74E9Efe26B2ce593e852#code
+
+
+### Fuzz test with Echidna
+Updated Aug 23rd, 2022.
+
+- Learn Docker to install and use trailofbits/eth-security-toolbox in container. Mount local file to Docker container.
