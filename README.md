@@ -24,6 +24,6 @@ Etherscan verification: https://rinkeby.etherscan.io/address/0x810D5fC2dE3795F47
 ### Fuzz test with Echidna
 Updated Aug 23rd, 2022.
 
-- Learn Docker to install and use trailofbits/eth-security-toolbox in container. Mount local file to Docker container.
+- Learn Docker to install echidna, use trailofbits/eth-security-toolbox in, and mount local folder to Docker container.
 
 ![image](https://user-images.githubusercontent.com/48362877/186281144-436830a4-9efb-4473-94ee-7b4b970666e8.png)
