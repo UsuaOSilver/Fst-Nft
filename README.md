@@ -35,3 +35,9 @@ Updated Aug 23rd, 2022.
 - Learn Docker to install echidna, use trailofbits/eth-security-toolbox in, and mount local folder to Docker container.
 
 ![image](https://user-images.githubusercontent.com/48362877/186281144-436830a4-9efb-4473-94ee-7b4b970666e8.png)
+
+## Static testing with Slither
+Updated Aug 28th, 2022.
+Produced an audit report for a peer repo using Slither.
+[Crystalized_VinhLe_NFT_Audit_Report__Silver_Consulting.pdf](https://github.com/UsuaOSilver/fst-nft/files/9444102/Audit_Crystalized_VinhLe_NFT.pdf)
+
