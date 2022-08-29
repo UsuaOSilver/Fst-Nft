@@ -38,6 +38,8 @@ Updated Aug 23rd, 2022.
 
 ## Static testing with Slither
 Updated Aug 28th, 2022.
+
 Produced an audit report for a peer repo using Slither.
+
 [Crystalized_VinhLe_NFT_Audit_Report__Silver_Consulting.pdf](https://github.com/UsuaOSilver/fst-nft/files/9444102/Audit_Crystalized_VinhLe_NFT.pdf)
 
