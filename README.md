@@ -7,6 +7,9 @@
 - React
 - IPFS
 - Alchemy
+- Foundry
+- Echidna
+- Slither
 
 ### What I learn:
 - How BAYC, CryptoPunk, NounsDAO design their smart contracts. These are some of the A+ projects with strong security guarantees, secured metadata, creativity, and elegance according to the [NFT smart contract rating](https://docs.google.com/spreadsheets/d/1vv1FNTSgIlAyeOg7lIYyChy9b9XYHJlS-spA7vYSSgk/edit#gid=0) of the CTO of RTFKT, [Samuel Cardillo](http://twitter.com/CardilloSamuel).
