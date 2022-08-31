@@ -1,4 +1,5 @@
-# Premier NFT Collection
+# FST NFT
+A Premier NFT Collection.
 
 ### Tech stack:
 - OppenZeppelin
@@ -23,10 +24,10 @@
 
 Etherscan verification: https://rinkeby.etherscan.io/address/0x810D5fC2dE3795F47e8e74E9Efe26B2ce593e852#code
 
-## Solidity tests with Foundry
+## Solidity test with Foundry
 Updated Aug 15, 2022.
 
-repo: https://github.com/UsuaOSilver/fst-nft-Foundry/blob/master/test/FstNFT.t.sol
+See this [repo](https://github.com/UsuaOSilver/fst-nft-Foundry/blob/master/test/FstNFT.t.sol).
 
 
 ## Fuzz test with Echidna
@@ -36,7 +37,7 @@ Updated Aug 23rd, 2022.
 
 ![image](https://user-images.githubusercontent.com/48362877/186281144-436830a4-9efb-4473-94ee-7b4b970666e8.png)
 
-## Static testing with Slither
+## Static test with Slither
 Updated Aug 28th, 2022.
 
 Produced an audit report for a peer repo using Slither.
